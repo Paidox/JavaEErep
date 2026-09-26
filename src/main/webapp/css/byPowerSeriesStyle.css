@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f9f9f9;
+}
+h2 {
+    color: #333;
+}
+table {
+    border-collapse: collapse;
+    background: white;
+    margin-top: 15px;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    text-align: center;
+}
+th {
+    background-color: #eaeaea;
+}
+td:first-child {
+    text-align: left;
+    font-weight: bold;
+}
+p {
+    font-size: 16px;
+    color: #555;
+}
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #0066cc;
+}
+a:hover {
+    text-decoration: underline;
+}
