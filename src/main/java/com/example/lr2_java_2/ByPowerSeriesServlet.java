@@ -25,6 +25,14 @@ public class ByPowerSeriesServlet extends HttpServlet
       double e1 = Double.parseDouble(request.getParameter("e1"));
       double e2 = Double.parseDouble(request.getParameter("e2"));
 
+
+      if (x <= -1 || x >= 1 || n <= 0)
+      {
+        request.setAttribute("errorMessage", " 'x' must be > -1 and < 1, 'n' must be > 0");
+        request.getRequestDispatcher("index.jsp").forward(request, response);
+        return;
+      }
+
       double[] res1 = service.byPowerSeries(x, n, e1);
       double[] res2 = service.byPowerSeries(x, n, e2);
 
