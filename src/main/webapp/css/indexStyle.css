@@ -97,6 +97,19 @@ button {
     transition: background-color 0.2s;
     margin-top: 30px;
 }
+
+.error-massage {
+    color: #e74c3c;
+    background-color: #fdeaea;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 6px;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    font-weight: 500;
+}
+
 button:hover {
     background-color: #2980b9;
 }

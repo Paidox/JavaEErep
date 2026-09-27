@@ -24,6 +24,13 @@ public class TabulationServlet extends HttpServlet
       double b = Double.parseDouble(request.getParameter("b"));
       double h = Double.parseDouble(request.getParameter("h"));
 
+      if (a < 0 || b < 0)
+      {
+        request.setAttribute("errorMessage", " 'a' and 'b' must be >= 0");
+        request.getRequestDispatcher("index.jsp").forward(request, response);
+        return;
+      }
+
       double[] xArray = service.generateXArray(a, b, h);
       double[] yArray = service.generateYArray(xArray);
 
